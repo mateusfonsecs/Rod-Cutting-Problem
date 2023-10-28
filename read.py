@@ -49,12 +49,12 @@ def GL(price, length):
 
 price = [1, 5, 8, 9, 10, 17, 17, 20, 24, 30,
         31, 33, 33, 33, 36, 36, 36, 42, 44, 44]
-n_values = list(range(1, 51))
+n_values = list(range(1, 21))
 results_rod = []
 results_dynamic = []
 results_bottom_up = []
 
-for n in range(1, 11):
+for n in range(1, 21):
     result_rod, c_rod = BF(price[:n], n)
     result_dynamic, c_dynamic = OT(price[:n], n)
     result_bottom_up, c_bottom_up = GL(price[:n], n)
